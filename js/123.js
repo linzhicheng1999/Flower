@@ -142,7 +142,7 @@ let originalString = `先画花的茎
     transform: translate(-40%);
 }
 .wishes > img:first-of-type {
-    transform: translate(-810%);
+    transform: translate(-600%);
 }
 .wishes > img:nth-of-type(2) {
     transform: translate(-270%);
