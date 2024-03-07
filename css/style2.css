@@ -88,7 +88,7 @@
     transition: transform 4s linear;
 }
 .wishes>div:nth-child(4) {
-    top: 75%;
+    top:85%;
     transition: transform 4s linear;
 }
 
