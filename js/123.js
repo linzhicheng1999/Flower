@@ -136,16 +136,16 @@ let originalString = `先画花的茎
     transform: translate(-35%);
 }
 .wishes>div:nth-child(3) {
-    transform: translate(-65%);
+    transform: translate(-80%);
 }
 .wishes>div:nth-child(4) {
-    transform: translate(-45%);
+    transform: translate(-80%);
 }
 .wishes > img:first-of-type {
-    transform: translate(-1300%);
+    transform: translate(-45%);
 }
 .wishes > img:nth-of-type(2) {
-    transform: translate(-1000%);
+    transform: translate(-45%);
 }`;
 
 let styleString = "";
