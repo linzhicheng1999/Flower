@@ -136,13 +136,13 @@ let originalString = `先画花的茎
     transform: translate(-35%);
 }
 .wishes>div:nth-child(3) {
-    transform: translate(-90%);
+    transform: translate(-95%);
 }
 .wishes>div:nth-child(4) {
     transform: translate(-40%);
 }
 .wishes > img:first-of-type {
-    transform: translate(-600%);
+    transform: translate(-400%);
 }
 .wishes > img:nth-of-type(2) {
     transform: translate(-270%);
