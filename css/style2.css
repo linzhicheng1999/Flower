@@ -53,8 +53,8 @@
     position: absolute;
     left: 100%; /* 根据需要调整 */
     white-space: nowrap;
-    width: 80px; /* 示例值，根据您的GIF大小调整 */
-    height: 80px; /* 保持GIF的宽高比 */
+    width: 50px; /* 示例值，根据您的GIF大小调整 */
+    height: 50px; /* 保持GIF的宽高比 */
 }
 
 .wishes > img:first-of-type {
