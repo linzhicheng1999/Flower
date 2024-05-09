@@ -70,7 +70,8 @@
     text-align: center;     /* 文本居中显示 */
     white-space: pre;       /* 保持格式，包括空格和换行 */
     margin: 20px 0;         /* 上下边距，可根据需要调整 */
-    animation: colorChange 10s infinite; /* 应用动画 */
+    animation: colorChange 3s infinite; /* 应用动画 */
+    font-size: 12px;
 }
 
 /* 新加入的*/
