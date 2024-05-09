@@ -4,7 +4,7 @@
     --light-pink: #DC4C70;
     --medium-pink: #D52D58;
     --dark-pink: #CA2850;
-    --light-brown: #EDE3D2;
+    --light-brown: rgb(248, 233, 206);
     --dark-brown: #73592E;
 }
 
@@ -61,7 +61,7 @@
     0% { color: red; }
     25% { color: blue; }
     50% { color: green; }
-    75% { color: purple; }
+    75% { color: rgb(0, 90, 102); }
     100% { color: red; }
 }
 
@@ -72,6 +72,8 @@
     margin: 20px 0;         /* 上下边距，可根据需要调整 */
     animation: colorChange 3s infinite; /* 应用动画 */
     font-size: 14px;
+    font-weight: bold;
+    text-shadow: -1px 0 rgb(226, 59, 17), 0 1px rgb(226, 59, 17), 1px 0 rgb(226, 59, 17), 0 -1px rgb(226, 59, 17);
 }
 
 /* 新加入的*/
