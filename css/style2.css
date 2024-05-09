@@ -48,6 +48,7 @@
 }
 
 .lower-part {
+    background: var(--light-brown);
     height: 60%; /* 占据容器的一半高度 */
     display: flex;
     justify-content: center;
