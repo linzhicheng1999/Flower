@@ -34,11 +34,11 @@
 
 .container {
     margin: auto;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background: var(--light-brown);
     overflow: hidden;
-    position: relative;
+    position: static;
 }
 
 /* 新加入的*/
