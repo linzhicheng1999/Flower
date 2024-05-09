@@ -72,8 +72,7 @@
     margin: 20px 0;         /* 上下边距，可根据需要调整 */
     animation: colorChange 3s infinite; /* 应用动画 */
     font-size: 14px;
-    font-weight: bold;
-    text-shadow: -1px 0 rgb(226, 59, 17), 0 1px rgb(226, 59, 17), 1px 0 rgb(226, 59, 17), 0 -1px rgb(226, 59, 17);
+    font-weight: 900;
 }
 
 /* 新加入的*/
