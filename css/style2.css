@@ -1,0 +1,153 @@
+:root {
+    --dark-green: #066406;
+    --light-green: #338f37;
+    --light-pink: #DC4C70;
+    --medium-pink: #D52D58;
+    --dark-pink: #CA2850;
+    --light-brown: #EDE3D2;
+    --dark-brown: #73592E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*::after {
+    box-sizing: border-box;
+}
+
+*::before {
+    box-sizing: border-box;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.container {
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    background: var(--light-brown);
+    overflow: hidden;
+    position: relative;
+}
+
+/* 新加入的*/
+.upper-part {
+    height: 40%; /* 占据容器的一半高度 */
+    position: relative;
+}
+
+.lower-part {
+    height: 60%; /* 占据容器的一半高度 */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* 确保文本垂直居中 */
+    font-family: 'Courier New', Courier, monospace; /* 等宽字体更适合展示字符图案 */
+    font-size: 1.5em;
+    white-space: pre; /* 保留空格和换行 */
+}
+
+@keyframes colorChange {
+    0% { color: red; }
+    25% { color: blue; }
+    50% { color: green; }
+    75% { color: purple; }
+    100% { color: red; }
+}
+
+#html-text {
+    width: 100%;            /* 使用整个容器的宽度 */
+    text-align: center;     /* 文本居中显示 */
+    white-space: pre;       /* 保持格式，包括空格和换行 */
+    margin: 20px 0;         /* 上下边距，可根据需要调整 */
+    animation: colorChange 10s infinite; /* 应用动画 */
+}
+
+/* 新加入的*/
+
+.rose {
+    margin: auto;
+    height: 400px;
+    width: 200px;
+    position: relative;
+}
+.wishes{
+    width: 100%;
+}
+.wishes > img {
+    position: absolute;
+    left: 100%; /* 根据需要调整 */
+    white-space: nowrap;
+    width: 50px; /* 示例值，根据您的GIF大小调整 */
+    height: 50px; /* 保持GIF的宽高比 */
+}
+
+.wishes > img:first-of-type {
+    top: 30%;
+    transition: transform 4s linear;
+}
+
+.wishes > img:nth-of-type(2) {
+    top: 60%;
+    transition: transform 4s linear;
+}
+
+.wishes>div{
+    position: absolute;
+    left: 100%;
+    white-space: nowrap;
+    color: var(--light-pink);
+    font-size: 20px;
+    width: 100%;
+}
+.wishes>div:first-child {
+    top: 5%;
+    transition: transform 4s linear;
+}
+.wishes>div:nth-child(2) {
+    top: 30%;
+    transition: transform 4s linear;
+}
+.wishes>div:nth-child(3) {
+    top: 60%;
+    transition: transform 4s linear;
+}
+.wishes>div:nth-child(4) {
+    top:85%;
+    transition: transform 4s linear;
+}
+
+.dead-petals>div {
+    position: absolute;
+    height: 10px;
+    width: 20px;
+    top: 25%;
+    border-radius: 0 20px;
+    transition-timing-function: ease-out;
+}
+
+@media (max-width: 500px) {
+    #wrapper {
+        flex-direction: column;
+    }
+
+    .container {
+        flex-grow: 1;
+        height: auto;
+    }
+
+    .upper-part, .lower-part {
+        height: auto; /* 在移动设备上允许内容自适应高度 */
+    }
+}
+

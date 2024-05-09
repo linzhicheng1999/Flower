@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HELLO WORLD Animation</title>
+    <style>
+        body { font-family: monospace; white-space: pre; }
+        #display { font-size: 2em; }
+    </style>
+</head>
+<body>
+    <div id="display"></div>
+    <script>
+        const patterns = {
+            'H': ["*   *", "*   *", "*****", "*   *", "*   *"],
+            'E': ["*****", "*    ", "*****", "*    ", "*****"],
+            'L': ["*    ", "*    ", "*    ", "*    ", "*****"],
+            'O': ["*****", "*   *", "*   *", "*   *", "*****"],
+            'W': ["*     *", "*     *", "*     *", "*  *  *", "*     *"],
+            'R': ["**** ", "*   *", "**** ", "*  * ", "*   *"],
+            'D': ["**** ", "*   *", "*   *", "*   *", "**** "],
+            ' ': ["  ", "  ", "  ", "  ", "  "],  // 空格用于更好的对齐
+            'P': ["**** ", "*   *", "**** ", "*    ", "*    "],
+            'M': ["*   *", "** **", "* * *", "*   *", "*   *"],
+            'Y': ["*   *", " * * ", "  *  ", "  *  ", "  *  "],
+            'A': [" *** ", "*   *", "*****", "*   *", "*   *"],
+            'T': ["*****", "  *  ", "  *  ", "  *  ", "  *  "]
+        };
+
+        const sentence = "HAPPY MOTHER DAY";
+        const height = 5;
+        const displayElement = document.getElementById('display');
+
+        function printAnimation() {
+            let index = 0;
+            const interval = setInterval(() => {
+                if (index > sentence.length) {
+                    clearInterval(interval);
+                    return;
+                }
+
+                let content = '';
+                for (let row = 0; row < height; row++) {
+                    const line = [...sentence.substring(0, index)].map(char => patterns[char][row]).join(' ');
+                    content += line + '\n';
+                }
+
+                displayElement.textContent = content;
+                index++;
+            }, 500);
+        }
+
+        window.onload = printAnimation;
+    </script>
+</body>
+</html>
