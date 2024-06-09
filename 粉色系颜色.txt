@@ -1,0 +1,3 @@
+    --light-pink: #DC4C70;
+    --medium-pink: #D52D58;
+    --dark-pink: #CA2850;
